@@ -9,9 +9,9 @@ let IQ = 50;
 
 const TOTAL_QUESTIONS = 6;
 let pressureMode = true;     // 🔥 set false if you want normal mode
-let timeLeft = 5;
+let timeLeft = 8;
 let timerInterval = null;
-const PRESSURE_TIME = 5;
+const PRESSURE_TIME = 8;
 
 const music = document.getElementById("bgMusic");
 const situation = document.getElementById("situation");
