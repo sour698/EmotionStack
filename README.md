@@ -104,7 +104,7 @@ Make decisions in real-life inspired scenarios, track your emotional stack, and 
 
 
 
-* Your game will be live at https://username.github.io/repo-name/.
+* The game will be live at https://emotionstack.netlify.app/
 
 
 
