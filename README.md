@@ -18,7 +18,7 @@ Make decisions in real-life inspired scenarios, track your emotional stack, and 
 
 
 
-* Pressure Mode – 5-second timer per question simulates real-life pressure situations.
+* Pressure Mode – 10-second timer per question simulates real-life pressure situations.
 
 
 
