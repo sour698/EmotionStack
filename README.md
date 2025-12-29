@@ -80,7 +80,7 @@ Make decisions in real-life inspired scenarios, track your emotional stack, and 
 
 * Clone the repository:
 
-&nbsp;   git clone https://github.com/sour698/EmotionStack.git
+&nbsp;    git clone https://github.com/sour698/EmotionStack.git
 
 
 
