@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EmotionStack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+
+
+<div class="container">
+  <header>
+    <h1>EmotionStack</h1>
+    <p>Decision-based Emotional Intelligence Simulator</p>
+     
+  </header>
+
+  <div class="top-controls">
+    <button onclick="toggleTheme()">🌙/☀️</button>
+    <button onclick="restartGame()">🔄</button>
+    <button onclick="exitGame()">❌</button>
+  </div>
+
+  <!-- Difficulty -->
+  <div class="difficulty">
+    <label>Select Difficulty:</label>
+    <select id="difficultySelect">
+      <option value="">Select</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <p class="hint">
+  Hint: ⚠️ Emotions stack up. Poor decisions increase stress and affect later outcomes.
+</p>
+
+  </div>
+
+  <div class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+  <div id="situation" class="situation">
+    Choose difficulty and click Start
+  </div>
+
+  <div id="buttons" class="buttons">
+    <button class="btn" onclick="startGame()">Start</button>
+  </div>
+
+  <div id="emotionStack" class="stack-text">
+    Current Emotion: Calm
+  </div>
+<br>
+  <div class="stack-visual">
+    <h3>Emotion Stack (Top <- Bottom)</h3>
+    <div id="stackContainer"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Sourav Das. All rights reserved. Built with ❤️ using HTML, CSS & JavaScript.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+
+body.light { background: #87ceeb; color: #000; }
+body.dark { background: #121212; color: #fff; }
+
+.container {
+  width: 95%;
+  max-width: 650px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+body.dark .container { background: #1e1e1e; }
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.hint {
+  font-size: 0.9rem;
+  background-color: #f0f4ff;  /* light blue highlight */
+  color: #333;
+  padding: 6px 10px;
+  border-left: 4px solid #64b5f6;  /* matching Confidence color */
+  border-radius: 4px;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.top-controls button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.difficulty {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  background: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0%;
+  background: #4caf50;
+  transition: width 0.4s;
+}
+
+.situation {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body.dark .situation { background: #333; }
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 22px;
+  margin: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.stack-text {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#stackContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stack-item {
+  width: 60%;          /* was 70% */
+  margin: 3px;         /* was 4px */
+  padding: 4px 6px;    /* was 6px */
+  font-size: 0.85em;   /* NEW – makes text smaller */
+  border-radius: 5px; /* slightly tighter */
+}
+footer {
+  text-align: center;       /* centers the text horizontally */
+  font-size: 0.85em;        /* optional: adjust size */
+  margin-top: 20px;         /* optional: space from above content */
+  color: #555;              /* optional: text color */
+}
+
+.stack-item.Stress { background: #ff6b6b; }
+.stack-item.Motivation { background: #4caf50; }
+.stack-item.Guilt { background: #888; }
+.stack-item.Confidence { background: #2196f3; }
+
+@keyframes slideIn {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
