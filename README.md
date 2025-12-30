@@ -62,7 +62,7 @@ Make decisions in real-life inspired scenarios, track your emotional stack, and 
 
 
 
-* In Pressure Mode, answer within 5 seconds or face a penalty.
+* In Pressure Mode, answer within 10 seconds or face a penalty.
 
 
 
